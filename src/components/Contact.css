@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.contact{
+    background-image: linear-gradient(to right, red , brown);
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 10px;
+}
+.user-name{
+    text-align: start;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact-container{
+    width: 50%;
+    height: fit-content;
+    display: inline;
+   
+}
+.phone-num{
+    text-align: start;
+    color: yellowgreen;
+    font-size: 1rem;
+    font-family: cursive;
+}
+.edit-icon{
+    margin-left: 30%;
+}
+.delete-icon{
+    margin-left: 5%;
+}
+input{
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.edit-button{
+    color: aliceblue;
+    padding: 5px;
+    size: 1rem;
+    text-align: end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+}

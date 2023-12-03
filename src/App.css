@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -35,4 +36,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+.contact-heading{
+  background-color: #3c3f46;
+  text-align: center;
+  font-size: 2rem;
+  color: aliceblue;
+  padding: 1rem;
+  font-family: 'Times New Roman', Times, serif;
 }
