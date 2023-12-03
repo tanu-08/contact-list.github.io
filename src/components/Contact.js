@@ -2,30 +2,30 @@ import React, { useState } from 'react';
 import '../components/Contact.css';
 import { FaPen, FaTrash } from 'react-icons/fa';
 
+//setting initial state
 const Contact = ({ contact, onEdit, onDelete, onUpdate }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedName, setEditedName] = useState(contact.name);
   const [editedPhone, setEditedPhone] = useState(contact.phone);
 
+  // if edit button is clicked then conditional rendering based on editing contact or not
   const handleEdit = () => {
     setIsEditing(true);
     onEdit(contact);
   };
-
+//handling cancel editing contact
   const handleCancelEdit = () => {
     setIsEditing(false);
     setEditedName(contact.name);
     setEditedPhone(contact.phone);
   };
-
+// handling click on save button for edit contact 
   const handleUpdate = () => {
     const updatedContact = {
       ...contact,
       name: editedName,
       phone: editedPhone,
     };
-    console.log('Updated Name:', editedName); // Debugging line
-    console.log('Updated Phone:', editedPhone); // Debugging line
     onUpdate(updatedContact);
     setIsEditing(false);
   };

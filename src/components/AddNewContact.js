@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import '../components/AddNewContact.css';
 
 const AddNewContactForm = ({ addContact }) => {
+  //setting initial state for name and contact umber
   const [name, setName] = useState('');
   const [mobileNumber, setMobileNumber] = useState('');
-
+//on submit click sending data to add contact prop function and api is called
   const handleSubmit = (e) => {
     e.preventDefault();
     const newContact = {
